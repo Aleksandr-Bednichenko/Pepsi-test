@@ -1,0 +1,24 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0;
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  color: rgb(96, 96, 96);
+  font-weight: 300;
+  font-family: Roboto, serif;
+  box-sizing: border-box;
+}
+
+.footerLine {
+  position: absolute;
+  left: -30px;
+  border-bottom: 2px solid rgb(170, 170, 170);
+}

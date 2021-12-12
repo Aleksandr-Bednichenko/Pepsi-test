@@ -1,0 +1,33 @@
+.navList {
+  display: flex;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  flex-direction: row;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: unset;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  font-family: Roboto, serif;
+  letter-spacing: 0px;
+  width: 190px;
+  height: 35px;
+  /* margin-top: 5px; */
+}
+
+.activeLinks {
+  background-color: rgb(170, 170, 170);
+}

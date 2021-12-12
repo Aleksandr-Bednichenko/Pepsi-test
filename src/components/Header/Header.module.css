@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+  width: 1170px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  /* text-align: center; */
+  font-family: Roboto, serif;
+  letter-spacing: 0px;
+
+  background-color: whitesmoke;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.headerPosition {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerNav {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+.headerLogout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin-left: auto;
+}
+.headerIcon {
+  background-color: rgb(170, 170, 170);
+  width: 30px;
+  height: 45px;
+  margin-left: 10px;
+  /* fill: rgb(170, 170, 170); */
+  /* background-image: url("../../images/logout.svg"); */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: Roboto, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.logoIcon {
+  width: 64px;
+  height: 64px;
+  text-align: start;
+  margin-right: 20px;
+}
+.headerLine {
+  position: absolute;
+  bottom: 102px;
+  left: 0px;
+  width: 100%;
+
+  border-bottom: 2px solid rgb(170, 170, 170);
+}

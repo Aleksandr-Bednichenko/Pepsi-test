@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: silver;
+}
+.tableList {
+}
+.tableItem {
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.iconTot {
+  width: 10px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.icontab {
+  margin-right: 10px;
+}

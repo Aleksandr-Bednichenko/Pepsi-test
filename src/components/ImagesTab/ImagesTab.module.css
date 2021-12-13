@@ -1,11 +1,39 @@
+ul,
+li {
+  margin: 0;
+  padding: 0 5px;
+  list-style-type: none;
+  z-index: 1;
+}
+.positionTable {
+  margin-bottom: 120px;
+}
+.iconfiltr {
+  width: 9px;
+  height: 11px;
+  margin-left: 2px;
+}
+button {
+  border-color: transparent;
+  background-color: transparent;
+}
 .table {
+  /* display: block; */
   width: 100%;
   border-collapse: collapse;
   border-color: silver;
+  padding-bottom: 40px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(235, 235, 235);
+  box-shadow: 0 1.5px 4px rgba(235, 235, 235, 0.24),
+    0 1.5px 6px rgba(235, 235, 235s, 0.12);
 }
 .tableList {
 }
 .tableItem {
+  position: relative;
   text-align: center;
   color: rgb(99, 99, 99);
   font-family: Roboto, serif;
@@ -16,12 +44,41 @@
   padding-bottom: 10px;
 }
 
+.tableItemOne {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  color: rgb(99, 99, 99);
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .iconTot {
   width: 10px;
   height: 15px;
   margin-right: 5px;
+  text-align: right;
+}
+.itemTot {
+  text-align: right;
 }
 
 .icontab {
+  width: 20px;
   margin-right: 10px;
+}
+tr:nth-child(odd) {
+  background: rgb(229, 229, 229);
+}
+tr:nth-child(even) {
+  background: #fff;
+}
+
+.actionMenu {
+  position: absolute;
+
+  background-color: #fff;
 }

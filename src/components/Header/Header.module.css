@@ -36,14 +36,28 @@
   right: 0;
   display: flex;
   margin-left: auto;
+  padding: 0;
 }
 .headerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(170, 170, 170);
   width: 30px;
   height: 45px;
   margin-left: 10px;
-  /* fill: rgb(170, 170, 170); */
-  /* background-image: url("../../images/logout.svg"); */
+  cursor: pointer;
+}
+
+.loginIcon {
+  /* width: 24px;
+  height: 24px;
+  fill: whitesmoke; */
+  transition: all 0.25s ease-in-out;
+}
+
+.loginIcon:hover {
+  transform: scale(1.1);
 }
 
 .logo {
@@ -54,6 +68,11 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+.logoIcon:hover {
+  transform: scale(1.1);
 }
 
 .logoIcon {
@@ -62,6 +81,7 @@
   text-align: start;
   margin-right: 20px;
 }
+
 .headerLine {
   position: absolute;
   bottom: 102px;

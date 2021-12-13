@@ -7,7 +7,7 @@ body {
   position: relative;
   box-sizing: border-box;
   width: 1170px;
-  height: 100vh;
+  height: 100%;
   padding: 20px 30px;
   background-color: #fff;
 

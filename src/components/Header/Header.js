@@ -1,6 +1,8 @@
 import Navigation from "../Navigation";
 import s from "./Header.module.css";
 import logo from "../../images/logo.png";
+import login from "../../images/login.svg";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,14 +10,18 @@ function Header() {
       <div className={s.headerPosition}>
         <div className={s.headerNav}>
           <Navigation />
-          <div className={s.headerLogout}>
+          <button className={s.headerLogout}>
             <p>userName</p>
-            <div className={s.headerIcon}></div>
-          </div>
+            <div type="button" className={s.headerIcon}>
+              <img className={s.loginIcon} src={login} alt={"login"} />
+            </div>
+          </button>
         </div>
         <div className={s.logo}>
-          <img className={s.logoIcon} src={logo} alt={"Logo"} />
-          <span>PEPSI</span>
+          <NavLink className={s.logo} to="/">
+            <img className={s.logoIcon} src={logo} alt={"Logo"} />
+            <span>PEPSI</span>
+          </NavLink>
         </div>
       </div>
       <div className={s.headerLine}></div>

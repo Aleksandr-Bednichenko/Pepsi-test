@@ -68,7 +68,14 @@
   overflow-wrap: break-word;
   display: table-cell;
   word-break: break-word;
+  background-color: rgb(170, 170, 170);
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
 }
+.formaButton:hover {
+  transform: scale(1.1);
+}
+
 .formaTitle {
   color: rgb(0, 0, 0);
   font-family: Roboto, serif;

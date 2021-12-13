@@ -10,15 +10,10 @@ button.add {
   font-weight: 400;
   letter-spacing: 0px;
   margin-bottom: 15px;
-  /* text-align: center;
-  text-decoration: none;
-  text-transform: uppercase; */
-  /* vertical-align: middle; */
-
-  /* min-width: 1px;
-  min-height: 1px; */
-  /* white-space: pre-wrap;
-  overflow-wrap: break-word; */
-  /* display: table-cell; */
-  /* word-break: break-word; */
+  background-color: rgb(170, 170, 170);
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+}
+button.add:hover {
+  transform: scale(1.1);
 }

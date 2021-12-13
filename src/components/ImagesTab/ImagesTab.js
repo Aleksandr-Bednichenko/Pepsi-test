@@ -1,15 +1,9 @@
-// import { useState } from "react";
 import s from "./ImagesTab.module.css";
 import FRA from "../../images/FRA.png";
 import GRB from "../../images/GRB.png";
 import ITA from "../../images/ITA.png";
-import total from "../../images/total.png";
-import filtr from "../../images/filtr.png";
-// import SimpleSelect from "../SimpleSelect";
-// import db from "../../db/db";
 
-// import IconButton from "@material-ui/core/IconButton";
-// import DeleteIcon from "@material-ui/icons/Delete";
+import filter from "../../images/filter.png";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -18,30 +12,31 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-// import FunctionsRoundedIcon from "@mui/icons-material/FunctionsRounded";
-// import FunctionsRoundedIcon from "@material-ui/icons/FunctionsRoundedIcon";
+import Sigma from "../../images/sigma.svg";
+
 const useStyles = makeStyles({
   container: {
-    // boxShadow:
-    //   "0px 2px 1px -1px rgba(235,235,235,0.2), 0px 1px 1px 0px rgba(235,235,235,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+    borderCollapse: "collapse",
+    borderColor: "rgb(170,170,170)",
     boxShadow: "0 3px 5px 5px rgb(235,235,235)",
     borderRadius: "4px",
     width: 1110,
-    collapse: "collapse",
   },
   headRow: {},
   body: {},
   bodyRow: {
-    border: "black",
+    // border: "black",
   },
   headCell: {
     padding: 15,
     color: "black",
-    // textTransform: "uppercase",
+    textAlign: "center",
+    fontWeight: "700",
     letterSpacing: 1,
   },
   cell: {
     padding: 15,
+    textAlign: "center",
   },
 });
 
@@ -57,37 +52,38 @@ const ImagesTab = () => {
             <TableRow className={classes.headRow}>
               <TableCell className={classes.headCell}>
                 country
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 first name
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 last name
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 gender
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 A
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 B
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 manager
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
               <TableCell className={classes.headCell}>
                 status
-                <img className={s.iconfiltr} src={filtr} alt={"filtr"} />
+                <img className={s.iconfilter} src={filter} alt={"filter"} />
               </TableCell>
             </TableRow>
+
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
                 <img className={s.icontab} src={GRB} alt={"flag"} />
@@ -99,7 +95,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>5</TableCell>
               <TableCell className={classes.cell}>53</TableCell>
               <TableCell className={classes.cell}>manager1</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -112,7 +114,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>4</TableCell>
               <TableCell className={classes.cell}>12</TableCell>
               <TableCell className={classes.cell}>manager2</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -125,7 +133,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>7</TableCell>
               <TableCell className={classes.cell}>2</TableCell>
               <TableCell className={classes.cell}>manager1</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -138,7 +152,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>15</TableCell>
               <TableCell className={classes.cell}>8</TableCell>
               <TableCell className={classes.cell}>manager2</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -151,7 +171,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>3</TableCell>
               <TableCell className={classes.cell}>29</TableCell>
               <TableCell className={classes.cell}>manager3</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -164,7 +190,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>4</TableCell>
               <TableCell className={classes.cell}>37</TableCell>
               <TableCell className={classes.cell}>manager2</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -177,7 +209,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>4</TableCell>
               <TableCell className={classes.cell}>12</TableCell>
               <TableCell className={classes.cell}>manager2</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -190,7 +228,13 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>14</TableCell>
               <TableCell className={classes.cell}>2</TableCell>
               <TableCell className={classes.cell}>manager1</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell className={classes.cell} component="td" scope="row">
@@ -203,22 +247,34 @@ const ImagesTab = () => {
               <TableCell className={classes.cell}>14</TableCell>
               <TableCell className={classes.cell}>14</TableCell>
               <TableCell className={classes.cell}>manager1</TableCell>
-              <TableCell className={classes.cell}>action</TableCell>
+              <TableCell className={classes.cell}>
+                <select className={s.action} name="action">
+                  <option value="1">processed</option>
+                  <option value="2">sent</option>
+                  <option value="3">delivered</option>
+                </select>
+              </TableCell>
             </TableRow>
             <TableRow className={classes.bodyRow}>
               <TableCell
-                colspan="4"
+                colSpan="4"
                 className={classes.cell}
                 component="td"
                 scope="row"
               >
-                {/* <FunctionsRoundedIcon /> */}
-                Total:
+                <div className={s.icontotal}>
+                  <img src={Sigma} alt={"sigma"} />
+                  <span className={s.total}>Total:</span>
+                </div>
               </TableCell>
-              <TableCell className={classes.cell}>66</TableCell>
-              <TableCell className={classes.cell}>127</TableCell>
-              <TableCell colspan="2" className={classes.cell}>
-                193
+              <TableCell className={classes.cell}>
+                <span className={s.textTotal}>66</span>
+              </TableCell>
+              <TableCell className={classes.cell}>
+                <span className={s.textTotal}>127</span>
+              </TableCell>
+              <TableCell colSpan="2" className={classes.cell}>
+                <span className={s.textTotal}>193</span>
               </TableCell>
             </TableRow>
           </TableBody>

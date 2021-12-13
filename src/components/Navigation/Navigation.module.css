@@ -26,6 +26,7 @@
   font-family: Roboto, serif;
   letter-spacing: 0px;
   height: calc(100% - 5px);
+  width: 145px;
   /* margin-top: 5px; */
 }
 

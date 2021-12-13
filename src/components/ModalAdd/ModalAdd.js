@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import InputCountry from "../InputCountry";
-import DatePickers from "./DatePickers";
+import MaterialUIPickers from "./MaterialUIPickers/MaterialUIPickers";
 import BasicTextFields from "./BasicTextFields";
 import { createPortal } from "react-dom";
 import s from "./Modal.module.css";
@@ -55,7 +55,7 @@ export default function Modal({ onClose }) {
           <div className={s.formaPosition}>
             <div className={s.formaEmail}>
               <InputCountry />
-              <DatePickers />
+              <MaterialUIPickers />
             </div>
 
             <div className={s.formaInputs}>

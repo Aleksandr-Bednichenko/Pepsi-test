@@ -8,7 +8,7 @@ li {
 .positionTable {
   margin-bottom: 120px;
 }
-.iconfiltr {
+.iconfilter {
   width: 9px;
   height: 11px;
   margin-left: 2px;
@@ -81,4 +81,26 @@ tr:nth-child(even) {
   position: absolute;
 
   background-color: #fff;
+}
+
+.icontotal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total {
+  padding-top: 8px;
+  font-weight: 700;
+}
+.textTotal {
+  font-weight: 700;
+}
+.action {
+  border-color: transparent;
+  outline: transparent;
+  appearance: none;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
 }

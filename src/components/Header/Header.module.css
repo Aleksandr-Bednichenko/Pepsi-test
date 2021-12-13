@@ -69,7 +69,6 @@
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
-  transition: all 0.25s ease-in-out;
 }
 .logoIcon:hover {
   transform: scale(1.1);
@@ -80,6 +79,7 @@
   height: 64px;
   text-align: start;
   margin-right: 20px;
+  transition: all 0.9s ease-in-out;
 }
 
 .headerLine {

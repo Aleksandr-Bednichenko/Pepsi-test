@@ -9,16 +9,6 @@
   z-index: 3;
   overflow: auto;
 }
-
-/* @media screen and (max-width: 767px) {
-  .backdrop {
-    width: 100%;
-    height: 100%;
-    top: 60px;
-    right: 0;
-  }
-} */
-
 .content {
   position: absolute;
   top: 0;
@@ -28,25 +18,29 @@
   margin: auto;
   box-sizing: border-box;
 
-  padding: 40px 40px;
-  /* margin: 0 auto; */
-  width: 808px;
-  height: 354px;
+  padding: 10px 10px;
+
+  width: 90%;
+  height: 450px;
   background: rgb(255, 255, 255);
 }
-
-/*  position: absolute; */
-
-/* @media screen and (min-width: 1024px) {
+@media screen and (max-width: 320px) {
   .content {
-    min-height: 768px;
-    max-width: 512px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    width: 320px;
   }
-} */
+}
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 808px) {
+  .content {
+    width: 808px;
+    height: 354px;
+  }
+}
 
 .formaButton {
   color: rgb(255, 255, 255);
@@ -59,7 +53,6 @@
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: middle;
-  /* width: 97px; */
   height: 40px;
   padding: 0px 16px;
   min-width: 1px;
@@ -83,19 +76,36 @@
   font-style: normal;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 40px;
 }
 
 .formaPosition {
-  display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 809px) {
+  .formaPosition {
+    display: flex;
+  }
+}
+
+.formaSave {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 430px) {
+  .formaSave {
+    margin-top: 0;
+  }
 }
 
 .formaButtonPosition {
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
-  display: flex;
   justify-content: space-between;
   margin-top: auto;
+}
+@media screen and (min-width: 430px) {
+  .formaButtonPosition {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
 }

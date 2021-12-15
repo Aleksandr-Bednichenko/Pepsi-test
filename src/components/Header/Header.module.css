@@ -1,13 +1,14 @@
 .header {
   position: relative;
-  width: 1170px;
+  width: calc(100% + 7px);
   color: rgb(0, 0, 0);
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
-  /* text-align: center; */
   font-family: Roboto, serif;
   letter-spacing: 0px;
+
+  left: -3.5px;
 
   background-color: whitesmoke;
   margin-top: 20px;
@@ -17,11 +18,11 @@
   padding-left: 30px;
   box-sizing: border-box;
 }
-
-.headerPosition {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .header {
+    width: calc(100% + 60px);
+    left: -30px;
+  }
 }
 
 .headerNav {
@@ -48,11 +49,13 @@
   margin-left: 10px;
   cursor: pointer;
 }
+@media screen and (max-width: 400px) {
+  .userName {
+    display: none;
+  }
+}
 
 .loginIcon {
-  /* width: 24px;
-  height: 24px;
-  fill: whitesmoke; */
   transition: all 0.25s ease-in-out;
 }
 

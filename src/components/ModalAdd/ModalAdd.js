@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import InputCountry from "../InputCountry";
-import MaterialUIPickers from "./MaterialUIPickers/MaterialUIPickers";
+import MaterialUIPickers from "./MaterialUIPickers";
 import BasicTextFields from "./BasicTextFields";
 import { createPortal } from "react-dom";
 import s from "./Modal.module.css";
@@ -71,7 +71,9 @@ export default function Modal({ onClose }) {
             >
               Cancel
             </button>
-            <button className={s.formaButton}>Save and Close</button>
+            <div className={s.formaSave}>
+              <button className={s.formaButton}>Save and Close</button>
+            </div>
           </div>
         </form>
       </div>

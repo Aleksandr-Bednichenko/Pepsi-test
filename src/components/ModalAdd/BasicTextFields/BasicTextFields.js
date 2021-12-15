@@ -6,7 +6,10 @@ const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
       margin: theme.spacing(1),
-      width: 350,
+      width: 250,
+      "@media (min-width: 430px)": {
+        width: 350,
+      },
     },
   },
 }));
@@ -15,9 +18,9 @@ export default function BasicTextFields() {
   const classes = useStyles();
 
   return (
-    <form className={classes.root} noValidate autoComplete="off">
+    <div className={classes.root} noValidate autoComplete="off">
       <TextField id="standard-basic" label="First name*:" />
       <TextField id="standard-basic" label="Last name*:" />
-    </form>
+    </div>
   );
 }

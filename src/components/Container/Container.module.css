@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  min-width: 320px;
+  padding: 0 5px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    height: 100%;
+    padding: 0 30px;
+  }
+}

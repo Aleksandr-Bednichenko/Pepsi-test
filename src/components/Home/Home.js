@@ -1,5 +1,10 @@
 import s from "./Home.module.css";
 function Home() {
-  return <h2 className={s.position}>Home</h2>;
+  return (
+    <div className={s.position}>
+      <h2>Home</h2>
+      <p>Please go to contacts</p>
+    </div>
+  );
 }
 export default Home;

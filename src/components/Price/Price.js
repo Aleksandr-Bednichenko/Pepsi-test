@@ -1,5 +1,10 @@
 import s from "./Price.module.css";
 function Price() {
-  return <h2 className={s.position}>Price</h2>;
+  return (
+    <div className={s.position}>
+      <h2>Price</h2>
+      <p>Please go to contacts</p>
+    </div>
+  );
 }
 export default Price;

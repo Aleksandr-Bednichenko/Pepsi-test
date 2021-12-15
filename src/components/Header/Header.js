@@ -11,7 +11,7 @@ function Header() {
         <div className={s.headerNav}>
           <Navigation />
           <button className={s.headerLogout}>
-            <p>userName</p>
+            <p className={s.userName}>userName</p>
             <div type="button" className={s.headerIcon}>
               <img className={s.loginIcon} src={login} alt={"login"} />
             </div>

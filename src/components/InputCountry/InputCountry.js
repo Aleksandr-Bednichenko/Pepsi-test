@@ -16,9 +16,14 @@ import ETH from "../../images/ETH.png";
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 350,
+    minWidth: 250,
+    "@media (min-width: 430px)": {
+      width: 350,
+    },
+
     borderColor: "black",
   },
+
   selectEmpty: {
     marginTop: theme.spacing(2),
   },

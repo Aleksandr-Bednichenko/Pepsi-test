@@ -2,14 +2,3 @@ body {
   background-color: rgb(96, 96, 96);
   font-family: "Roboto", sans-serif;
 }
-
-.container {
-  position: relative;
-  box-sizing: border-box;
-  width: 1170px;
-  height: 100%;
-  padding: 20px 30px;
-  background-color: #fff;
-
-  margin: 0 auto;
-}

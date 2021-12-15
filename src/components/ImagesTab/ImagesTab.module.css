@@ -18,7 +18,6 @@ button {
   background-color: transparent;
 }
 .table {
-  /* display: block; */
   width: 100%;
   border-collapse: collapse;
   border-color: silver;
@@ -47,7 +46,6 @@ button {
 .tableItemOne {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   color: rgb(99, 99, 99);
   font-family: Roboto, serif;
   font-size: 14px;

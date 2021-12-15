@@ -20,7 +20,10 @@ const useStyles = makeStyles({
     borderColor: "rgb(170,170,170)",
     boxShadow: "0 3px 5px 5px rgb(235,235,235)",
     borderRadius: "4px",
-    width: 1110,
+    width: "100%",
+    "@media (max-width: 730px)": {
+      width: 730,
+    },
   },
   headRow: {},
   body: {},

@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useState, lazy } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import SubNavigationContacts from "../SubNavigationContacts/SubNavigationContacts";
-import InputCountry from "../InputCountry";
-import ModalAdd from "../ModalAdd";
-import InfoTab from "../InfoTab";
-import ImagesTab from "../ImagesTab";
-import FaqTab from "../FaqTab";
-import NewTab from "../NewTab";
 import s from "./Contacts.module.css";
+const SubNavigationContacts = lazy(() =>
+  import("../SubNavigationContacts/SubNavigationContacts")
+);
+const InputCountry = lazy(() => import("../InputCountry"));
+const ModalAdd = lazy(() => import("../ModalAdd"));
+const InfoTab = lazy(() => import("../InfoTab"));
+const ImagesTab = lazy(() => import("../ImagesTab"));
+const FaqTab = lazy(() => import("../FaqTab"));
+const NewTab = lazy(() => import("../NewTab"));
 
 function Contacts() {
   const [openModal, setOpenModal] = useState(false);

@@ -27,24 +27,7 @@ export default function Modal({ onClose }) {
     }
   };
 
-  const handleSubmit = (e) => {
-    // e.preventDefault();
-    console.log(e);
-    // if (name.trim() === "" || number.trim() === "") {
-    //   alert("Fill all fields!");
-    //   return;
-    // }
-    // const existContact = isContsctExist();
-    // if (existContact) {
-    //   alert(`${existContact.name} is already in contacts.`);
-    //   setName("");
-    //   setNumber("");
-    //   return;
-    // }
-
-    // setName("");
-    // setNumber("");
-  };
+  const handleSubmit = (e) => {};
 
   return createPortal(
     <div className={s.backdrop} onClick={handleBackdropClick}>

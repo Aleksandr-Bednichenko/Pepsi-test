@@ -1,8 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
-// import Header from "./components/Header";
-// import Footer from "./components/Footer";
 import Container from "./components/Container";
 const Header = lazy(() => import("./components/Header"));
 const Footer = lazy(() => import("./components/Footer"));
